@@ -1,0 +1,234 @@
+/* Style Guide Rules
+   ========================================================================== */
+
+body {font-family: 'aktiv-grotesk-std', helvetica, arial, sans-serif;}
+
+/* Color Variables */
+
+/* State Color variables */
+@green: #46a34f;
+@gold: #ef9a21;
+@red: #d94332;
+@green-hover: darken(@green, 5%); /* #2f9839 */
+@gold-hover: darken(@gold, 5%); /* #d27e07 */
+@red-hover: darken(@red, 5%); /* #ba2717 */
+
+/* Interface Color variables */
+@white: #fff;
+@white-alt: #f8f8f8;
+@white-alt-hover: #f2f2f2;
+@border: #e7e8eb;
+@blue: #285984;
+@blue-hover: darken(@blue, 5%); /* #0d314f */
+@gray-dark: #2f343e; /* ??? not used in this file */
+
+/* Text color variables */
+@gray-heading: #333;
+@gray-paragraph: #555; /* ??? not used in this file */
+@gray-secondary-text: #999;
+@gray-text-on-gray-dark: #7b818a;
+@blue-text-links: #4184B1;
+
+/* Text Color */
+.green { color: #46a34f; }
+.gold { color: @gold; }
+.red { color: @red; }
+
+.gray { color: @gray-paragraph; }
+.gray-alt { color: @gray-text-on-gray-dark; }
+.gray-dark { color: @gray-dark; }
+.gray-headline { color: @gray-heading; }
+.gray-light { color: @gray-secondary-text; }
+.gray-border { color: @border; }
+
+.white-alt { color: @white-alt; }
+.blue { color: @blue; }
+.link-blue { color: @blue-text-links;}
+
+
+/* Background Color */
+.bg-green { background-color: #46a34f; }
+.bg-gold { background-color: @gold; }
+.bg-red { background-color: @red; }
+
+.bg-light { background-color: @gray-secondary-text; }
+.bg-gray-alt { background-color: @gray-text-on-gray-dark; }
+.bg-gray { background-color: @gray-paragraph; }
+.bg-dark { background-color: @gray-dark; }
+.bg-gray-headline { background-color: @gray-heading; }
+.bg-gray-border { background-color: @border; }
+
+.bg-white { background-color: @white; border: 1px solid @border; }
+.bg-white-alt { background-color: @white-alt; }
+
+.bg-blue { background-color: @blue; }
+.bg-link-blue { background-color: @blue-text-links; }
+
+
+/* Typography */
+
+h1 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  color: @gray-heading;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 34px;
+  color: @gray-heading;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: @gray-heading;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: @gray-heading;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: @gray-paragraph;
+}
+
+p.blog {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: @gray-paragraph;
+}
+
+span.details {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: @gray-paragraph;
+}
+
+
+/* Buttons
+   ========================================================================== */
+
+/* Default Button */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: @gray-paragraph;
+    color: @white;
+    text-align:center;
+    line-height:normal;
+    box-sizing:border-box;
+    display:inline-block;
+    cursor:pointer;
+}
+.btn:hover {
+    text-decoration: none;
+    color: @white;
+    background-color: @gray-heading;
+}
+
+/* Default Outline */
+.btn-outline {
+    border: 1px solid @border;
+    background-color: @white-alt;
+    color: @gray-paragraph;
+}
+.btn-outline:hover {background-color: @white-alt-hover;}
+
+/* Green */
+.btn-green {
+    background-color: @green;
+    color: @white;
+}
+.btn-green:hover {background-color: @green-hover;}
+
+/* Green Outline */
+.btn-green.btn-outline {
+    background-color: @white-alt;
+    color: @green;
+}
+.btn-green.btn-outline:hover {background-color: @white-alt-hover;}
+
+/* Gold */
+.btn-gold {
+    background-color: @gold;
+    color: @white;
+}
+.btn-gold:hover {background-color: @gold-hover;}
+
+/* Gold Outline */
+.btn-gold.btn-outline {
+    background-color: @white-alt;
+    color: @gold;
+}
+.btn-gold.btn-outline:hover {background-color: @white-alt-hover;}   
+    
+/* Red */
+.btn-red {
+    background-color: @red;
+    color: @white;   
+}
+.btn-red:hover {background-color: @red-hover;}
+
+/* Red Outline */
+.btn-red.btn-outline {
+    background-color: @white-alt;
+    color: @red;
+}
+.btn-red.btn-outline:hover {background-color: @white-alt-hover;}   
+    
+/* Blue */
+.btn-blue {
+    background-color: @blue;
+    color: @white;
+}
+.btn-blue:hover {background-color: @blue-hover;}
+
+/* Blue Outline */
+.btn-blue.btn-outline {
+    background-color: @white-alt;
+    color: @blue;
+}
+.btn-blue.btn-outline:hover {background-color: @white-alt-hover;}
+    
+/* Large */
+.btn-large {
+    padding: 10px 25px;
+    font-size:16px;
+}
+
+/* Small */
+.btn-small {
+    padding: 8px 20px;
+    font-size:12px;
+}
+input.btn-small { /* adjust for input buttons */
+    margin-bottom: 0;
+    padding-bottom:24px;
+}
+
+/* Dark Gray */
+.btn-outline-dark {
+    border: 1px solid @border;
+    background-color: @gray-heading;
+    color: @gray-text-on-gray-dark;
+}
+
+.visual-dark-bg {
+  background-color: @gray-dark;
+  padding: 20px;
+  text-align: center;
+  min-height: 150px;
+}
