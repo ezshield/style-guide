@@ -118,7 +118,6 @@ span.details {
   color: @gray-paragraph;
 }
 
-
 /* Buttons
    ========================================================================== */
 
@@ -262,11 +261,8 @@ input.btn-small { /* adjust for input buttons */
 
 /*Logos*/
 
-.visual img{
-	width: auto;
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
+.dark {
+  background-color:#2f343e;
 }
 
 .desc a{
@@ -274,6 +270,24 @@ input.btn-small { /* adjust for input buttons */
 	margin: 20px 0;
 }
 
+/*Partner Logos - JOHN MILLER*/
+
+.partnerlevelbranding h3 {margin: 0 0 5px;}
+.partnerlevelbranding img {margin: 5%;}
+
+
+/*Anywhere a logo is solo in the right column - JOHN MILLER*/
+
+.soloimage .example-row {display:table;}
+.soloimage .desc {
+	float:none; 
+	display:table-cell; 
+	vertical-align:middle;}
+.soloimage .visual {
+	float:none; 
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center;}
 
 /*Voice & Tone*/
 .content h2 { margin: 60px 0 25px; }
@@ -313,7 +327,7 @@ blockquote {
   float: left;
   width: 30%;
   padding: 5%;
-  margin: 0px 1.66667%;
+  margin: 1.66667%;
 }
 
 .card:hover {

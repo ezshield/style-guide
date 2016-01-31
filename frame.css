@@ -567,11 +567,11 @@ article {
 }
 
 .desc {
-  float: left;
   width: 48%;
   border-right: 1px solid #e7e8eb;
   padding-right: 6%;
   margin-right: 6%;
+  float:left;
 }
 
 .desc h3 {
@@ -585,14 +585,14 @@ article {
   padding: 5px 10px;
   margin: 10px 15px 0 0;
   float: left;
-  display: block
+  display: block;
 }
 
 .visual {
   width: 46%;
   margin: 0;
-  float: left;
   padding: 0;
+  float:left;
 }
 
 .swatch {
