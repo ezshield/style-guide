@@ -2,7 +2,7 @@
 <html lang="en" ng-app="app">
 <head>
   <title>EZShield Style Guide</title>
-
+  <meta name="robots" content="noindex">
   <link href="code.css" rel="stylesheet" type="text/css" />
   <link href="frame.css" rel="stylesheet" type="text/css" />
   <link href="style.less" rel="stylesheet/less" type="text/css" />
@@ -57,13 +57,13 @@
 
     <!-- Colors ---------------------------------------------------->
     <article id="colors">
-      <h1 id="color-swatches">Colors</h1>
+      <h1 id="color-swatches">Swatches</h1>
 
       <!-- Swatches -->
       <div class="group">
         <div class="intro">
           <h2>Swatches</h2>
-          <p>These color swatches give us an overview of our collection of colors. Please reference the sections below for more detailed information and use cases.</p>
+          <p>The following color swatches give us an overview of our collection of colors. Please reference the sections below for more detailed information and use cases.</p>
         </div>
         <div class="example">
           <!-- State Colors -->
@@ -126,19 +126,19 @@
             <h3>Text Colors</h3>
             <div class="swatch square bg-gray-headline">
                 <strong>Heading Text </strong>
-                <span>#333</span>
+                <span>#303030</span>
                 <span>RGB 47 52 62</span>
                 <span>CMYK 77 68 54 51</span></div>
             <div class="swatch square bg-gray">
                 <strong>Paragraph Text </strong>
-                <span>#555</span>
+                <span>#505050</span>
                 <span>RGB 47 52 62</span>
                 <span>CMYK 77 68 54 51</span></div>
             <div class="swatch square bg-light">
                 <strong>Secondary Text</strong>
-                <span>#999</span>
-                <span>RGB 47 52 62</span>
-                <span>CMYK 77 68 54 51</span></div>
+                <span>#909090</span>
+                <span>RGB 144 144 144</span>
+                <span>CMYK 46 38 38 2</span></div>
             <div class="swatch square bg-gray-alt">
                 <strong>Dark Background Text </strong>
                 <span>#7b818a</span>
@@ -162,7 +162,7 @@
       <!-- Headline Colors -->
       <div class="group">
         <div class="intro">
-          <h2>Headline Colors</h2>
+          <h2>Headlines</h2>
           <!-- <p>Used for any text headline.</p> -->
         </div>
         <div class="example">
@@ -171,7 +171,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Headlines</h3>
-              <p>We use should use this color for most headlines.</p>
+              <p>We use this color for most headlines.</p>
               <span>Hex: #333</span><span>Sass: $gray-headline</span>
             </div>
             <div class="visual">
@@ -199,7 +199,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Paragraph Text</h3>
-              <p>This is our body copy and paragraph text color. Should be used for large bodies of text.</p>
+              <p>This is our body copy and paragraph text color. It should be used for large bodies of text.</p>
               <span>Hex: #555</span><span>Sass: $gray</span>
             </div>
             <div class="visual">
@@ -265,7 +265,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Required Information</h3>
-              <p>We use this color to highlight to the user important or required information such as required form fields and page errors.</p>
+              <p>We use this color to highlight important or required information to the user—such as required form fields and page errors.</p>
               <span>Hex: #ef9a21</span><span>Sass: $gold</span>
             </div>
             <div class="visual">
@@ -294,7 +294,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Green / Positive</h3>
-              <p>This is our primary color. Used for good news such as having zero alerts, a good credit score, and positive buttons like purchase, open, view, etc.</p>
+              <p>This is our primary color. We use it for good news—such as having zero alerts, a good credit score, and positive buttons like purchase, open, view, etc.</p>
               <span>Hex: #46a34f</span><span>Sass: $green</span>
             </div>
             <div class="visual">
@@ -310,7 +310,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Gold / Requires Attention</h3>
-              <p>This is our color for alerts. If the user has an alert and we're messaging them about it in any way, use this color.</p>
+              <p>This is our color for alerts. We use this color whenever the user has an alert.</p>
               <span>Hex: #ef9a21</span><span>Sass: $gold</span>
             </div>
             <div class="visual">
@@ -326,7 +326,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Red / Negative</h3>
-              <p>This is our color for threats and open cases. If the user has a threat or an open case, we should message them with this color. Should also be used for negative actions like report a threat, delete, etc.</p>
+              <p>This is our color for threats and open cases. If the user has a threat or an open case, we message them with this color. This color is also used for negative actions like reporting a threat.</p>
               <span>Hex: #d94332</span><span>Sass: $red</span>
             </div>
             <div class="visual">
@@ -354,7 +354,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>Dark Gray / Sidebar Background</h3>
-              <p>This background color is used for our dashboard navigation sidebar.</p>
+              <p>This background color is used for our online dashboard navigation sidebar.</p>
               <span>Hex: #2f343e</span><span>Sass: $gray-dark</span>
             </div>
             <div class="visual">
@@ -393,7 +393,7 @@
           <div class="example-row">
             <div class="desc">
               <h3>White Accent / Zebra Striping</h3>
-              <p>Used as an alternative row color in a table.</p>
+              <p>We use this color as an alternative row color in a table.</p>
               <span>Hex: #f2f2f2</span><span>Sass: $white-accent</span>
             </div>
             <div class="visual">
@@ -437,14 +437,33 @@
     <!-- Typography ---------------------------------------------------->
     <article id="typography">
       <h1>Typography</h1>
-      <div class="group">
+           <div class="group">
         <div class="intro">
-          <h2>Marketing and Dashboard Typography</h2>
+          <h2>Print &amp; Image Fonts</h2>
         </div>
         <div class="example">
 
           <div class="example-row">
-            <p>We use <strong><a href="https://typekit.com/fonts/aktiv-grotesk-std" target="_blank">Aktiv Grotesk Std</a></strong> for all of our text, on every site. If unavailable for some reason, you may use Helvetica as a substitute.</p>
+            <p>We use the typeface <strong>Helvetica Neue LT Std</strong> as our primary font. If unavailable for any reason, you may use Helvetica as a substitute.</p>
+            <br>
+            <p><strong>More to come in this section.</strong></p>
+          </div>
+
+          
+
+
+
+    		  <div class="cb"></div>
+  	    </div>
+      </div>
+      <div class="group">
+        <div class="intro">
+          <h2>Web &amp; Mobile Fonts</h2>
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <p>We use the typeface <strong><a href="https://typekit.com/fonts/aktiv-grotesk-std" target="_blank">Aktiv Grotesk Std</a></strong> for all of our text, on every site. If unavailable for any reason, you may use Helvetica as a substitute.</p>
             <br>
             <p><strong>font-family: 'aktiv-grotesk-std', helvetica, arial, sans-serif;</strong></p>
           </div>
@@ -871,7 +890,22 @@ input.btn-small {
     </article>
     <!-- END ---------------------------------------------------->
 
+	<!-- PARDOT Website Tracking -------------------------------->
   </section>
+<script type="text/javascript">
+piAId = '46932';
+piCId = '22693';
 
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+	<!-- END -------------------------------->
 </body>
 </html>
