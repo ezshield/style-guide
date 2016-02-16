@@ -1,4 +1,4 @@
-require 'less_js'
+require 'less-js'
 
 namespace :assets do
 
