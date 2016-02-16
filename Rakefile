@@ -16,14 +16,14 @@ namespace :assets do
   end
 
   namespace :precompile do
-    task :all => ["assets:precompile:rjs",
+    task :all => [#"assets:precompile:rjs",
                   "assets:precompile:less"]
 
     task :external => ["assets:test_node"] do
       Rake::Task["assets:precompile:all"].invoke
     end
 
-    task :rjs do
+    task :less do
       `npm install -g less`
       unless $?.success?
         raise RuntimeError, "Failed to install less NPM."
