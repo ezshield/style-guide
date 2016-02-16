@@ -24,14 +24,15 @@ namespace :assets do
     end
 
     task :less do
-      `npm install -g less`
-      unless $?.success?
-        raise RuntimeError, "Failed to install less NPM."
-      end
-      `lessc style.less style.css`
-      unless $?.success?
-        raise RuntimeError, "Failed to lessc."
-      end
+      LessJs.compile File.read("style.less")
+      #`npm install -g less`
+      #unless $?.success?
+      #  raise RuntimeError, "Failed to install less NPM."
+      #end
+      #`lessc style.less style.css`
+      #unless $?.success?
+      #  raise RuntimeError, "Failed to lessc."
+      #end
     end
 
    #task :less do
