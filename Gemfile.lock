@@ -61,6 +61,7 @@ PLATFORMS
 
 DEPENDENCIES
   execjs
+  less-js
   jekyll
   kramdown
   puma
