@@ -1,5 +1,3 @@
-require 'less-js'
-
 namespace :assets do
 
   def invoke_or_reboot_rake_task(task)
@@ -26,7 +24,14 @@ namespace :assets do
     end
 
     task :less do
-      LessJs.compile File.read("style.less")
+      parser = Less::Parser.new :filename => 'style.less'
+      tree = parser.parse
+      css = tree.to_cc
+      File.open('style.css', 'w') {|f| f.write(css) }
+      
+      
+      #LessJs.compile File.read("style.less")
+      
       #`npm install -g less`
       #unless $?.success?
       #  raise RuntimeError, "Failed to install less NPM."
