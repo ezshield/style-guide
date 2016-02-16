@@ -24,7 +24,7 @@ namespace :assets do
     end
 
     task :rjs do
-      `node /r.js -o build.js`
+      `node bin/r.js -o build.js`
       unless $?.success?
         raise RuntimeError, "JS compilation with r.js failed."
       end
