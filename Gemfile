@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'execjs'
+gem 'less-js'
 gem 'jekyll'
 gem 'kramdown'
 gem 'rack-jekyll'
