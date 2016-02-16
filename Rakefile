@@ -24,20 +24,24 @@ namespace :assets do
     end
 
     task :rjs do
-      `node bin/r.js -o build.js`
+      `npm install -g less`
       unless $?.success?
-        raise RuntimeError, "JS compilation with r.js failed."
+        raise RuntimeError, "Failed to install less NPM."
+      end
+      `lessc style.less style.css`
+      unless $?.success?
+        raise RuntimeError, "Failed to lessc."
       end
     end
 
-    task :less do
-      less = File.open('style.less', 'r').read
-      parser = Less::Parser.new :paths => ['.']
-      tree = parser.parse less
-      css = tree.to_css
-    #Dir.mkdir 'public/css/'
-      File.open('style.css', 'w') {|f| f.write(css) }
-    end
+   #task :less do
+   #  less = File.open('style.less', 'r').read
+   #  parser = Less::Parser.new :paths => ['.']
+   #  tree = parser.parse less
+   #  css = tree.to_css
+   ##Dir.mkdir 'public/css/'
+   #  File.open('style.css', 'w') {|f| f.write(css) }
+   #end
   end
 
   desc "Precompile JS and LESS assets"
