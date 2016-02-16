@@ -1,3 +1,5 @@
+require 'less_js'
+
 namespace :assets do
 
   def invoke_or_reboot_rake_task(task)
