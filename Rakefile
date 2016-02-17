@@ -21,9 +21,6 @@ namespace :assets do
 
     task :external => ["assets:test_node"] do
       Rake::Task["assets:precompile:all"].invoke
-      `bundle install`
-      `cp Gemfile Gemfile.txt`
-      `cp Gemfile.lock Gemfile.lock.txt`
     end
 
     task :less do
@@ -57,6 +54,10 @@ namespace :assets do
 
   desc "Precompile JS and LESS assets"
   task :precompile do
+    puts `bundle install`
+    puts `cp Gemfile Gemfile.txt`
+    puts `cp Gemfile.lock Gemfile.lock.txt`
+    puts `bundle exec jekyll-auth new`
     puts `bundle exec jekyll build`
   end
 
