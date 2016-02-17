@@ -15,4 +15,4 @@ exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefil
 
 jekyll_auth:
   whitelist:
-    - "((?!resources).)*"
+    - "^((?!resources).)*$"
