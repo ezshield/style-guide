@@ -1,5 +1,3 @@
-require 'less'
-
 namespace :assets do
 
   def invoke_or_reboot_rake_task(task)
@@ -23,13 +21,14 @@ namespace :assets do
 
     task :external => ["assets:test_node"] do
       Rake::Task["assets:precompile:all"].invoke
+      `bundle install`
     end
 
     task :less do
-      parser = Less::Parser.new :filename => 'style.less'
-      tree = parser.parse
-      css = tree.to_cc
-      File.open('style.css', 'w') {|f| f.write(css) }
+      #parser = Less::Parser.new :filename => 'style.less'
+      #tree = parser.parse
+      #css = tree.to_cc
+      #File.open('style.css', 'w') {|f| f.write(css) }
       
       
       #LessJs.compile File.read("style.less")
@@ -56,7 +55,6 @@ namespace :assets do
 
   desc "Precompile JS and LESS assets"
   task :precompile do
-    invoke_or_reboot_rake_task "assets:precompile:all"
     puts `bundle exec jekyll build`
   end
 
