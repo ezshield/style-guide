@@ -22,6 +22,8 @@ namespace :assets do
     task :external => ["assets:test_node"] do
       Rake::Task["assets:precompile:all"].invoke
       `bundle install`
+      `cp Gemfile Gemfile.txt`
+      `cp Gemfile.lock Gemfile.lock.txt`
     end
 
     task :less do
