@@ -68,3 +68,4 @@ DEPENDENCIES
   puma
   rack-jekyll
   rake
+  jekyll-auth
