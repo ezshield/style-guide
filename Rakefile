@@ -2,6 +2,7 @@
 # Feel free to add additional Rake tasks so long as
 # `rake assets:precompile` continues to generate the jekyll site
 
+
 namespace :assets do
   task :precompile do
     sh "bundle exec jekyll-auth build"
