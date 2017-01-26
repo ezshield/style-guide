@@ -357,12 +357,18 @@ header {
 }
 
 header h2 {
-  color: #fff;
-  display: block;
   padding: 25px 0 0;
   margin: 0;
   float: left;
   font-size: 16px;
+}
+
+header h2 a {
+  color: #fff;
+}
+
+header h2 a:hover {
+  color: #f8f8f8;
 }
 
 .picker {
@@ -408,10 +414,23 @@ header h2 {
 	}
 }
 
+.top {
+  display: none;
+  position: fixed;
+  border: 1px solid #e7e8eb;
+  padding: 5px 10px;
+  margin-left: 50px;
+}
+
+.top:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
 nav {
   float: left;
   width: 20%;
-  margin: 66px 5% 0 0;
+  margin: 80px 5% 0 0;
   position: absolute;
 }
 
@@ -423,14 +442,76 @@ nav ul {
 nav li {
   list-style-type: none;
   margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 nav a {
   text-decoration: none;
 }
 
+/*nav ul li span.arrow {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #4184B1;
+  margin-right: 15px;
+  display: block;
+  float: left;
+  margin-top: 3px;
+}
+
+nav ul li.active span.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #4184B1;
+  margin-right: 10px;
+  display: block;
+  float: left;
+  margin-top: 6px;
+}*/
+
 nav ul li ul {
-  padding: 10px 0 5px 15px;
+  padding: 10px 0 5px 20px;
+}
+
+nav ul li.active ul {
+  display: block;
+}
+
+nav ul li ul li {
+  font-size: 14px;
+}
+
+nav ul li ul li ul li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.nav-main {
+  float: right;
+  margin-top: 20px;
+}
+
+.nav-main ul li {
+  float: left;
+  list-style-type: none;
+}
+
+.nav-main ul li a {
+  color: #fff;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.nav-main ul li a:hover {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  color: #fff;
+  padding: 9px;
 }
 
 section {
@@ -461,7 +542,7 @@ article {
   margin-bottom: 50px;
 }
 
-.intro, .example, .code {
+.intro, .example, .code, .content {
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -486,11 +567,11 @@ article {
 }
 
 .desc {
-  float: left;
   width: 48%;
   border-right: 1px solid #e7e8eb;
   padding-right: 6%;
   margin-right: 6%;
+  float:left;
 }
 
 .desc h3 {
@@ -504,14 +585,14 @@ article {
   padding: 5px 10px;
   margin: 10px 15px 0 0;
   float: left;
-  display: block
+  display: block;
 }
 
 .visual {
   width: 46%;
   margin: 0;
-  float: left;
   padding: 0;
+  float:left;
 }
 
 .swatch {
@@ -645,4 +726,16 @@ input:focus {
   color: #ef9a21;
   padding: 15px;
   margin: 20px 0 0;
+}
+
+.interlinks {
+  margin-bottom: 20px;
+}
+
+.interlinks a {
+  margin-left: 10px;
+}
+
+.full-width-container {
+  padding: 100px 50px;
 }

@@ -17,7 +17,8 @@ body {font-family: 'aktiv-grotesk-std', helvetica, arial, sans-serif;}
 @white: #fff;
 @white-alt: #f8f8f8;
 @white-alt-hover: #f2f2f2;
-@border: #e7e8eb;
+@white-accent: #f2f2f2;
+@border: #e5e5e5;
 @blue: #285984;
 @blue-hover: darken(@blue, 5%); /* #0d314f */
 @gray-dark: #2f343e; /* ??? not used in this file */
@@ -60,6 +61,7 @@ body {font-family: 'aktiv-grotesk-std', helvetica, arial, sans-serif;}
 
 .bg-white { background-color: @white; border: 1px solid @border; }
 .bg-white-alt { background-color: @white-alt; }
+.bg-white-accent { background-color: @white-accent; }
 
 .bg-blue { background-color: @blue; }
 .bg-link-blue { background-color: @blue-text-links; }
@@ -116,9 +118,14 @@ span.details {
   color: @gray-paragraph;
 }
 
-
 /* Buttons
    ========================================================================== */
+
+.visual .btn {
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 /* Default Button */
 .btn {
@@ -141,11 +148,26 @@ span.details {
 
 /* Default Outline */
 .btn-outline {
-    border: 1px solid @border;
+    border: 1px solid @gray-paragraph;
     background-color: @white-alt;
     color: @gray-paragraph;
 }
-.btn-outline:hover {background-color: @white-alt-hover;}
+.btn-outline:hover {
+  background-color: @white-alt-hover;
+  color: @gray-paragraph;
+}
+
+/* Default Outline Subtle */
+.btn-outline-subtle {
+  border: 1px solid @border;
+  background-color: @white-alt;
+  color: @gray-paragraph;
+}
+
+.btn-outline-subtle:hover {
+  background-color: @white-alt-hover;
+  color: @gray-paragraph;
+}
 
 /* Green */
 .btn-green {
@@ -156,7 +178,8 @@ span.details {
 
 /* Green Outline */
 .btn-green.btn-outline {
-    background-color: @white-alt;
+    background-color: @white;
+    border: 1px solid @green;
     color: @green;
 }
 .btn-green.btn-outline:hover {background-color: @white-alt-hover;}
@@ -170,25 +193,27 @@ span.details {
 
 /* Gold Outline */
 .btn-gold.btn-outline {
-    background-color: @white-alt;
+    background-color: @white;
+    border: 1px solid @gold;
     color: @gold;
 }
-.btn-gold.btn-outline:hover {background-color: @white-alt-hover;}   
-    
+.btn-gold.btn-outline:hover {background-color: @white-alt-hover;}
+
 /* Red */
 .btn-red {
     background-color: @red;
-    color: @white;   
+    color: @white;
 }
 .btn-red:hover {background-color: @red-hover;}
 
 /* Red Outline */
 .btn-red.btn-outline {
-    background-color: @white-alt;
+    background-color: @white;
+    border: 1px solid @red;
     color: @red;
 }
-.btn-red.btn-outline:hover {background-color: @white-alt-hover;}   
-    
+.btn-red.btn-outline:hover {background-color: @white-alt-hover;}
+
 /* Blue */
 .btn-blue {
     background-color: @blue;
@@ -198,11 +223,12 @@ span.details {
 
 /* Blue Outline */
 .btn-blue.btn-outline {
-    background-color: @white-alt;
+    background-color: @white;
+    border: 1px solid @blue;
     color: @blue;
 }
 .btn-blue.btn-outline:hover {background-color: @white-alt-hover;}
-    
+
 /* Large */
 .btn-large {
     padding: 10px 25px;
@@ -221,7 +247,7 @@ input.btn-small { /* adjust for input buttons */
 
 /* Dark Gray */
 .btn-outline-dark {
-    border: 1px solid @border;
+    border: 1px solid @gray-text-on-gray-dark;
     background-color: @gray-heading;
     color: @gray-text-on-gray-dark;
 }
@@ -235,14 +261,84 @@ input.btn-small { /* adjust for input buttons */
 
 /*Logos*/
 
-.visual img{
-	width: auto;
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
+.dark {
+  background-color:#2f343e;
 }
 
 .desc a{
 	display: block;
 	margin: 20px 0;
+}
+
+/*Partner Logos - JOHN MILLER*/
+
+.partnerlevelbranding h3 {margin: 0 0 5px;}
+.partnerlevelbranding img {margin: 5%;}
+div.intro partnerlevelbranding {padding: 30px 30px 0 30px;}
+img.partnerexampleimage {
+	margin:0;
+	width:100%;
+	}
+
+
+/*Anywhere a logo is solo in the right column - JOHN MILLER*/
+
+.soloimage .example-row {display:table;}
+.soloimage .desc {
+	float:none; 
+	display:table-cell; 
+	vertical-align:middle;}
+.soloimage .visual {
+	float:none; 
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center;}
+
+/*Voice & Tone*/
+.content h2 { margin: 60px 0 25px; }
+.content h3 { margin: 60px 0 25px; }
+.content h4 { margin: 30px 0 20px; }
+.content p { margin-bottom: 20px;}
+.content li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.content hr {
+  margin-top: 60px;
+}
+blockquote {
+  text-align: center;
+  margin: 20px 5% 40px;
+  padding: 20px;
+  width: 90%;
+  font-size: 16px;
+  font-weight: 300;
+}
+.content .example {
+  background: #f8f8f8;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.card {
+  border: 1px solid #E7E8EB;
+  border-radius: 5px;
+  background-color: #FFF;
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  padding: 5%;
+  margin: 1.66667%;
+}
+
+.card:hover {
+  background-color: #e5e5e5;
+}
+
+.card h2 {
+  margin: 0 0 20px;
 }
