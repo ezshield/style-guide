@@ -350,10 +350,9 @@ a:hover {
 }
 
 header {
-  height: 80px;
   background-color: #2f343e;
   color: #fff;
-  padding: 0 50px;
+  padding: 0 50px 25px;
 }
 
 header h2 {
@@ -398,12 +397,34 @@ header h2 a:hover {
   text-decoration: none;
 }
 
+@media (max-width: 1000px) {
+  header h2 {
+    float: none;
+    text-align: center;
+  }
+  .nav-main {
+    float: none;
+    width: 100%;
+  }
+  .nav-main ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav-main ul li {
+    float: none;
+  }
+  .nav-main ul li a {
+    padding: 0;
+    margin: 0 10px !important;
+    text-align: center;
+    display: block;
+  }
+}
+
 @media (max-width: 640px) {
-	header {height: 140px}
-	header h2 {
-	  float: none;
-	  text-align: center;
-	}
 	.picker {
 	  float: none;
 	  position: relative;
@@ -412,6 +433,11 @@ header h2 a:hover {
 	  width: 190px;
 	  margin: 10px auto 0;
 	}
+}
+@media (max-width: 450px) {
+  .nav-main ul {
+    flex-direction: column;
+  }
 }
 
 .top {
@@ -522,7 +548,7 @@ section {
 }
 
 @media (max-width: 780px) {
-  nav {display: none;}
+  nav {display: none !important;}
   section {
     float: none;
     width: 90%;
@@ -738,4 +764,40 @@ input:focus {
 
 .full-width-container {
   padding: 100px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Password Overlay */
+.overlay-password {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.passwordContainer {
+  width: 90%;
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.passwordContainer .btn {
+  margin: 20px auto;
+}
+
+.passwordContainer .passwordInput {
+  width: 200px;
+  margin: 40px 0 20px;
+}
+
+.passwordContainer .passwordError {
+  color: #d94332;
 }
