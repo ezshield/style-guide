@@ -24,7 +24,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>
     $( document ).ready(function() {
-      $('nav, section').hide();
       $('.btn').click(function() {
         checkPasswordMatch();
       });
@@ -76,7 +75,7 @@
     </div>
   </div>
   
-  <nav>
+  <nav style="display: none;">
     <ul>
       <li><div class="js-toplevel"><span class="arrow"></span><span>Branding Guide</span></div>
         <ul>
@@ -87,7 +86,7 @@
     </ul>
   </nav>
 
-  <section>
+  <section style="display: none;">
     <!-- Partners ---------------------------------------------------->
     <article id="partnerbranding">
       <h1>Partner Logo Guidelines</h1>
