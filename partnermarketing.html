@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <title>EZShield Style Guide</title>
+  <meta name="robots" content="noindex">
+  <link href="code.css" rel="stylesheet" type="text/css" />
+  <link href="frame.css" rel="stylesheet" type="text/css" />
+  <link href="style.less" rel="stylesheet/less" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73717885-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <script src="less.js" type="text/javascript"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/dfr8gzl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $('.btn').click(function() {
+        checkPasswordMatch();
+      });
+
+      function checkPasswordMatch() {
+        var password = $("#txtPassword").val();
+
+        if (password != "ezshield-style-guide") {
+            $("#divCheckPasswordMatch").html("The password you entered is incorrect");
+        }
+        else {
+          localStorage.setItem('password','lock');
+          $('.overlay-password').hide();
+          $('nav, section').show();
+        }
+      }
+
+      if (localStorage && localStorage.getItem('password')) {
+        $('.overlay-password').hide();
+        $('nav, section').show();
+      }
+    });
+  </script>
+
+  <style type='text/css'> #turnkey-credit { font-family: Tahoma,Sans,Arial,Helvetica,Verdana,sans-serif; font-size: 11px; text-align: center; } #turnkey-credit a { text-decoration: none; } #turnkey-credit a:hover { text-decoration: underline; } body.wp-admin #turnkey-credit, body#image #turnkey-credit, body#media-upload #turnkey-credit { display: none; } </style></head>
+
+<body id="top">
+
+  <header>
+    <h2><a href="index.html">EZShield<sup>&reg;</sup> Style Guide</a></h2>
+    <div class="nav-main">
+      <ul>
+        <li><a href="branding.html">EZShield Branding</a></li>
+        <li><a href="design.html">EZShield Design</a></li>
+        <li><a href="partnerresources.html">Partner Messaging</a></li>
+        <li><a href="partnermarketing.html">Partner Marketing</a></li>
+        <li><a href="partnerbranding.html">Partner Branding</a></li>
+      </ul>
+    </div>
+    <div class="cb"></div>
+  </header>
+
+  <div class="overlay-password">
+    <div class="passwordContainer">
+      <p>For our partners, we offer a number of branding choices for your custom identity protection program so that we can best fit your needs.<br><br></p>
+      <p>Please reach out to your dedicated EZShield client services manager at <a href="mailto:cs@ezshield.com">cs@ezshield.com</a> to view this section.</p>
+      <input class="passwordInput" type="password" id="txtPassword" />
+      <div class="passwordError" id="divCheckPasswordMatch"></div>
+      <div class="btn js-passwordBtn">Submit</div>
+    </div>
+  </div>
+
+  <nav style="display: none;">
+    <ul>
+      <li><div class="js-toplevel"><span class="arrow"></span><span>Partner Marketing</span></div>
+        <ul>
+           <li><a href="#AM">Adoption Marketing</a>
+            <ul>
+              <li>- <a href="#AM-Overview">Adoption Marketing Overview</a><li>
+              <li>- <a href="#AM-Display">Choose Your Display</a><li>
+              <li>- <a href="#AM-1">Theme 1: Palm of Your Hand</a><li>
+              <li>- <a href="#AM-2">Theme 2: Open to Thieves</a><li>
+              <li>- <a href="#AM-3">Theme 3: Years of Change</a><li>
+              <li>- <a href="#AM-4">Theme 4: Open to Thieves</a><li>
+              <li>- <a href="#AM-5">Theme 5: Protecting Your Story</a><li>
+              <li>- <a href="#AM-6">Theme 6: Looking Out For You</a><li>
+              <li>- <a href="#AM-7">Theme 7: Me and My Identity</a><li>
+              <li>- <a href="#AM-8">Theme 8: Connected World</a><li>
+            </ul>
+          </li>
+          <li><a href="#IFS">Identity Fact Sheets</a>
+            <ul>
+              <li>- <a href="#IFS">Fact Sheet Overview</a></li>
+              <li>- <a href="#IFS-1">Social Media Safety</a></li>
+              <li>- <a href="#IFS-2">Child Identity Theft</a></li>
+              <li>- <a href="#IFS-3">Criminal Identity Theft</a></li>
+              <li>- <a href="#IFS-4">Synthetic Identity Theft</a></li>
+              <li>- <a href="#IFS-5">Medical Identity Theft</a></li>
+              <li>- <a href="#IFS-6">Scams and Prevention Tips</a></li>
+            </ul>
+          </li>
+          <li><a href="#EPV">EZShield Product Videos</a>
+            <ul>
+              <li>- <a href="#EPV-1">EZShield Identity Crime Protection, Sound Required</a></li>
+              <li>- <a href="#EPV-2">EZShield in 60 Seconds, No Sound Required</a></li>
+              <li>- <a href="#EPV-3">Online Identity Vault, Sound Required</a></li>
+            </ul>
+          </li>
+           <li><a href="#News">Provide Top ID Crime News</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <section style="display: none;">
+   
+   
+   <!-- Partner Messaging Intro ---------------------------------------------------->
+
+   
+     
+     
+    <article id="#">
+       
+          <h1>Partner Marketing - Introduction</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ipsum quis velit semper tincidunt vitae vel justo. Nam et orci risus. Integer vitae arcu eget risus dapibus dapibus non ut libero. Aenean sed faucibus eros. Sed eros dui, porttitor a nunc at, scelerisque fermentum est. Vestibulum eget gravida purus, a sagittis magna. </p>
+   
+      
+		  		  </article>
+		  		  <article>
+		  		  <h2 id="AM">Adoption Marketing</h2>
+
+      <!-- Swatches -->
+      
+
+      <!-- Headline Colors -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-Overview">Adoption Marketing Program Overview </h2>
+          <!-- <p>Used for any text headline.</p> -->
+        </div>
+        <div class="example">
+
+          <!-- Main Headline -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>1) Choose Your Display Based on Your Strategy </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ipsum quis velit semper tincidunt vitae vel justo. Nam et orci risus. Integer vitae arcu eget risus dapibus dapibus non ut libero..</p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="images/AM-2.png" alt="Choose your display" />
+            </div>
+            <div id="color-body" class="cb"></div>
+          </div>
+          <div class="example-row">
+            <div class="desc">
+              <h3>2) Pick Your Theme based on Your Target</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ipsum quis velit semper tincidunt vitae vel justo. Nam et orci risus. Integer vitae arcu eget risus dapibus dapibus non ut libero..</p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="images/AM-1.png" alt="pick your theme" />
+            </div>
+            <div id="color-body" class="cb"></div>
+          </div>
+          <div class="example-row">
+            <div class="desc">
+              <h3>3) Follow Best Practices for the Highest Return</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ipsum quis velit semper tincidunt vitae vel justo. Nam et orci risus. Integer vitae arcu eget risus dapibus dapibus non ut libero..</p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="images/AM-3.png" alt="follow best practices" />
+            </div>
+            <div id="color-body" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Body Colors -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-Display">Choose Your Display</h2>
+          <!-- <p>These are our body text colors.</p> -->
+        </div>
+        <div class="example">
+
+          <!-- Gray -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>Print Display</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra viverra fermentum. Proin ullamcorper tempus quam sed venenatis. </p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="images/PrintAds.png" alt="follow best practices" />
+            </div>
+            <div class="cb"></div>
+          </div>
+
+          <!-- Light Gray -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>Desktop and Mobile Web Ads</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra viverra fermentum. Proin ullamcorper tempus quam sed venenatis. </p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="images/WebAds.png" alt="follow best practices" />
+            </div>
+            <div class="cb"></div>
+          </div>
+
+          
+
+         
+
+        </div>
+      </div>
+
+
+      <!-- Adoption Marketing 1 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-1">Theme 1: Palm of Your Hand</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“Identity Protection in the Palm of Your Hand"</p><br>
+              <h3>Goal</h3>
+              <p>Our Identity protection services are easy to use, highly advanced and accessible where you need it no matter your life style.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/Genx-Mil.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_PalmofYourHand1-683x1024.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_PalmofYourHand2-683x1024.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_PalmofYourHand3-683x1024.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      <!-- Adoption Marketing 2 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-2">Theme 2: Open to Thieves</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“You Wouldn’t Leave Your Life Open to Thieves.  Why Leave Your Identity at RISK?”</p><br>
+              <h3>Goal</h3>
+              <p>There are so many things we naturally secure everyday in the work week. Now is the time to think about securing your identity.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/BB-Genx.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_OpenToThieves1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_OpenToThieves2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_OpenToThieves3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Adoption Marketing 3 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-3">Theme 3: 10 Years of Change</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“A lot can change in 10 years.  Discover Identity Protection Built for what’s ahead.”
+</p><br>
+              <h3>Goal</h3>
+              <p>We have gotten used to technology changing so fast, that we aren’t aware of how it’s exposed our personal information in new ways.  Because of this rapid change, you need protection from a company that protects you in new ways you are exposed.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/BB-Genx.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Decade1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Decade2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Decade3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Adoption Marketing 4 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-4">Theme 4: How ID Thieves See You</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“How do identity thieves see you?”
+
+</p><br>
+              <h3>Goal</h3>
+              <p>Everyone’s personal information is being traded online in some form. With our identity protection, we help to secure your information and block it from being exposed to thieves.
+</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/BB-Mil.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_HowThievesSeeYou1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_HowThievesSeeYou2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_HowThievesSeeYou3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Adoption Marketing 5 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-5">Theme 5: Protecting Your Story</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“Your name tells a story. Make sure it’s your own.”</p><br>
+              <h3>Goal</h3>
+              <p>Each person has a lifetime of prized memories and hard work behind them. Don’t let an identity thief take your name and use your story.  Your story is worth protecting. </p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/SG-BB.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Story1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Story2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Story3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Adoption Marketing 6 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-6">Theme 6: Looking Out For You</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“You’re always looking our for others, but who’s looking out for you?”</p><br>
+              <h3>Goal</h3>
+              <p>You are focused on your kids and grandkids and giving them the best of your time and energy.  You need someone who is looking out for you in these changing times with Identity Protection.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/SG-BB.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_LookingOut1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_LookingOut2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_LookingOut3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      <!-- Adoption Marketing 7 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-7">Theme 7: Me and My Identity</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“I am connected, adventurous and spontaneous.  But I make sure my identity isn’t.”</p><br>
+              <h3>Goal</h3>
+              <p>You might be older now, but you are more connected and adventurous than ever. You need us to care about securing your identity so you can focus on living your life to the fullest.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/SG-BB.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_MeAndMyIdentity1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_MeAndMyIdentity2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_MeAndMyIdentity3-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      <!-- Adoption Marketing 8 -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="AM-8">Theme 8: Connected World</h2>
+          <!-- <p>These are our user messaging colors. These are for text elements where we are notifying the user of something.</p> -->
+        </div>
+        <div class="example">
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Message</h3>
+              <p>“Protect your identity in today’s connected world.”</p><br>
+              <h3>Goal</h3>
+              <p>Technology is changing fast; and all of your friends enjoy using it to connect with each other and your family.  But as technology changes, so do risks, so protect your identity with business you can trust.</p><br>
+              <h3>Target</h3>
+              <p><img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/08/SG-BB.png" alt="EZShield Solo Shield Black and White Logo" /></p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_ConnectedWorld1-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_ConnectedWorld2-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div id="color-states" class="cb"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- State Colors -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="IFS">Identity Fact Sheets</h2>
+          
+          <!-- <p>These are our state colors. We use these colors to indicate something is in a particular state such as positive news, alerts, etc. Can be used as a text color or background color.</p> -->
+        </div>
+        <div class="example">
+<div class="content"><p id="IFS-Overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+          
+          <!-- Social Media Safety -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-1">Social Media Safety</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+            </div>
+            <div class="visual">
+               <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Social-Media-Safety-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Child Identity Theft -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-2">Child Identity Theft</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+            </div>
+            <div class="visual">
+             <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Child-Identity-Theft-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Criminal Identity Theft -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-3">Criminal Identity Theft</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio.</p>
+        </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Criminal-Identity-Theft-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Synthetic Identity Theft -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-4">Synthetic Identity Theft</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Synthetic-Identity-Theft-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          
+         <!-- Medical Identity Theft -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-5">Medical Identity Theft</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Medical-Identity-Theft-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Scams and Prevention Tips -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="IFS-6">Scams and Prevention Tips</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio. </p>
+            </div>
+            <div class="visual">
+              <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Fact-Sheet-Scams-and-Prevention-Tips-min.jpg" alt="EZShield Solo Shield Black and White Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          
+
+          <!-- Red -->
+          
+        </div>
+		  </div></div>
+
+
+      <!-- Interface Colors -->
+      <div class="group">
+        <div class="intro">
+          <h2 id="EPV">EZShield Product Videos</h2>
+          <!-- <p>These are our primary colors. We use Sass to abstract our color values into variables for better consistency and maintenance. Unless absolutely necessary, we should avoid introducing new colors into the CSS.</p> -->
+        </div>
+        <div class="example">
+<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. </p>
+         
+
+          <!-- Video 1 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="EPV-1">EZShield Identity Crime Protection</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio.<br><br>
+              <strong>Length:</strong> 1.34 minutes<br>
+              <strong>Sound Required?</strong> Yes<br>
+              <strong>Voiceover:</strong> Yes<br>
+              <strong>Music:</strong> Yes<br>
+              <strong>Download Link:</strong> <a target="_blank" href="https://vimeo.com/229125246/c8fba75ddf">https://vimeo.com/229125246/c8fba75ddf</a></p>
+            </div>
+            <div class="visual">
+                        <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Video-Overview.png" alt="EZShield Solo Shield Black and White Logo" />
+
+                        </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Video 2 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="EPV-2">EZShield in 60 Seconds</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio.<br><br>
+              <strong>Length:</strong> 60 seconds<br>
+              <strong>Sound Required?</strong> No<br>
+              <strong>Voiceover:</strong> No<br>
+              <strong>Music:</strong> Yes<br>
+              <strong>Download Link:</strong> <a target="_blank" href="https://vimeo.com/229125218/d90ab94ff8">https://vimeo.com/229125218/d90ab94ff8</a></p>
+            </div>
+            <div class="visual">
+                        <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Video-ConnectedWorld.png" alt="EZShield Solo Shield Black and White Logo" />
+
+                        </div>
+            <div class="cb"></div>
+          </div>
+          
+          <!-- Video 3 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3 id="EPV-3">EZShield Online Identity Vault</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie mauris dignissim nibh posuere, sit amet mattis nisl ullamcorper. Nunc laoreet consequat augue. Mauris porta justo non rhoncus interdum. Praesent in orci ac enim sodales rhoncus tristique in odio.<br><br>
+              <strong>Length:</strong> 1.18 minutes<br>
+              <strong>Sound Required?</strong> Yes<br>
+              <strong>Voiceover:</strong> Yes<br>
+              <strong>Music:</strong> Yes<br>
+              <strong>Download Link:</strong> <a target="_blank" href="https://vimeo.com/229125238/e94de98e5f">https://vimeo.com/229125238/e94de98e5f</a>
+</p>
+            </div>
+            <div class="visual">
+                        <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/Video-Vault.png" alt="EZShield Solo Shield Black and White Logo" />
+
+                        </div>
+            <div class="cb"></div>
+          </div>
+        </div>
+		  </div></div>
+		  
+		  
+		        <div class="group">
+        <div class="intro">
+          <h2 id="News">Provide Top ID Crime News Feed on Your Website</h2>
+          <!-- <p>These are our primary colors. We use Sass to abstract our color values into variables for better consistency and maintenance. Unless absolutely necessary, we should avoid introducing new colors into the CSS.</p> -->
+        </div>
+        <div class="example">
+<div class="content"><p>Stay informed with the latest content from EZShield and our educational blog Fighting Identity Crimes. The Live Fraud Feed meets your needs all in one place — conveniently keeping you and your customers up-to-date from your fraud education center. Leverage this valuable resource now by filling out the form below.</p>
+         
+
+          <!-- Video 1 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>Your Live Fraud Feed Includes:</h3>
+              
+              <ul>
+<li>Timely educational content from fraud industry experts</li>
+<li>The latest breach alerts and scam news with sound solutions</li>
+<li>Tips and prevention measures to keep consumers secure</li>
+<li>Optimized content to fit all electronic devices</li>
+<li>Simple integration and customized disclaimer</li>
+</ul><br><p></p><strong>Learn More and Sign Up Here:</strong> <a target="_blank" href="https://www.ezshield.com/provide-top-id-crime-news/">https://www.ezshield.com/provide-top-id-crime-news/</a></p>
+            </div>
+            <div class="visual">
+                        <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/11/rssFeedDevices.jpg">
+
+                        </div>
+            <div class="cb"></div>
+          </div>
+      
+        </div>
+		  </div></div>
+		  
+    </article>
+    <!-- END ---------------------------------------------------->
+
+
+  </section>
+<!-- PARDOT Website Tracking -------------------------------->
+  </section>
+<script type="text/javascript">
+piAId = '46932';
+piCId = '22693';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+	<!-- END -------------------------------->
+</body>
+</html>
