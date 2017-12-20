@@ -46,6 +46,18 @@
         $('.overlay-password').hide();
         $('nav, section').show();
       }
+
+      var distance = $('nav').offset().top,
+      $window = $(window);
+
+      $window.scroll(function() {
+          if ( $window.scrollTop() >= distance - 25 ) {
+              $('nav').css({"position": "fixed", "margin-top": "0", "top": "25px"});
+          }
+          if ( $window.scrollTop() <= distance - 25 ) {
+              $('nav').css({"position": "absolute", "margin-top": "80px", "top": "initial"});
+          }
+      });
     });
   </script>
 
