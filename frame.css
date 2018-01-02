@@ -644,6 +644,19 @@ article {
   color: #fff;
 }
 
+.square2 {
+  height: 50px;
+  width: 100%;
+  float: left;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.secondaryAccent {
+  display: inline !important;
+}
+
 .invert { color: #333; }
 
 pre {

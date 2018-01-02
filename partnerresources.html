@@ -6,6 +6,8 @@
   <link href="code.css" rel="stylesheet" type="text/css" />
   <link href="frame.css" rel="stylesheet" type="text/css" />
   <link href="style.less" rel="stylesheet/less" type="text/css" />
+  <link href="lightbox/lightbox.min.css" rel="stylesheet" type="text/css" />
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-18930113-4“></script>
@@ -23,6 +25,7 @@
   <script type="text/javascript" src="//use.typekit.net/dfr8gzl.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="lightbox/lightbox.min.js"></script>
   <script>
     $( document ).ready(function() {
       $('.btn').click(function() {
@@ -95,9 +98,9 @@
         <ul>
            <li><a href="#vt-messageIntro">Messaging</a>
             <ul>
-              <li>- <a href="#vt-messageEncourage">Messaging We Encourage</a><li>
-              <li>- <a href="#vt-messageDiscourage">Messaging We Discourage</a><li>
-              <li>- <a href="#vt-messageDont">Messaging We Do Not Support</a><li>
+              <li>- <a href="#vt-messageEncourage">Messaging We Encourage</a></li>
+              <li>- <a href="#vt-messageDiscourage">Messaging We Discourage</a></li>
+              <li>- <a href="#vt-messageDont">Messaging We Do Not Support</a></li>
             </ul>
           </li>
           <li><a href="#vt-statistics">Using Statistics</a>
@@ -131,257 +134,356 @@
      
      <!-- Messaging Encourage ---------------------------------------------------->
         
-         <article id="vt-messageEncourage">
-         <h2 id="voice-and-tone">Messaging We Encourage</h2>
+         <article id="vt-messageIntro">
+         <h2 id="voice-and-tone">Messaging</h2>
          
-      <div class="group">
-         
-          
-          
-          <div class="content"> 
-          <h3>
- 1) Empower people to take steps to protect themselves from identity crimes</h3>
-          <p>
-		 One of the most valuable ways we can help your customers/members/employees is to empower them to protect their identities. The goal is to inspire them to invest in themselves. Accomplish this through timely, easy-to-understand educational content that creates a natural relationship.</p>
-          <p><span class="example"><strong>Example</strong><br><br><img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_MeAndMyIdentity1-WM.jpg" alt="Provide a Sense of Control" />
-          </span></p>
-          
-          <hr>
-          
-          <h3>2) Motivate people to make good security decisions through sound security practices, monitoring tools and reaching out to resolution specialists.</h3>
-          <p>
-		 By integrating best practices and tools into everyday life, while also taking advantage of expert assistance, we can help people learn to make protective measures a regular part of their lives.</p>
-          <p><span class="example"><strong>Example</strong><br><br>
-          <img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_LookingOut1-WM.jpg" alt="Provide a Sense of Control" />
-          
-          </span></p>
-          
-          <hr>
-          
-          <h3>3) Encourage a deeper understanding and proactive approach to data protection.</h3>
-          <p>
-		  If we continue to be better understand identity crimes and proactively protect our information, we will be able to help prevent identity crimes from negatively affecting us.</p>
-          <p><span class="example"><strong>Example</strong><br><br>
-          <img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_HowThievesSeeYou3-WM.jpg" alt="Provide a Sense of Control" />
-          </span></p>
-          
-          <hr>
-                   
-          
-          <h3>4) Provide a sense of control.</h3>
-          <p>
-		Protecting your information is easy when you take advantage of the powerful tools, resources and assistance at your fingertips.</p>
-          <p><span class="example"><strong>Example 1</strong><br><br>
-              		<img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_PalmofYourHand1-WM.jpg" alt="Provide a Sense of Control" /><br><br><strong>Example 2</strong><br><br><img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_Decade1-WM.jpg" alt="Provide a Sense of Control" />
-          </span></p>
-          
-          <hr>
-          
-          
-          <h3>5) Express the critical role people have in protecting themselves from identity crimes.</h3>
-          <p>
-		 We support taking a proactive role in one’s identity protection; they should be the number one advocate for their good name.</p>
-          <p><span class="example"><strong>Example</strong><br><br>
-          <img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_Story3-WM.jpg" alt="Provide a Sense of Control" />
-          </span></p>
-          
-          <hr>
-          
-          
-          <h3>6) Emphasize the pervasive nature of sensitive data and the many access points thieves can abuse.</h3>
-          <p>
-		We live in a connected world, where information security is not always guaranteed. Identity thieves have a number of access points from which they can steal your sensitive information. It’s up to you to understand these risks and manage them appropriately.</p>
-          <p><span class="example"><strong>Example 1</strong><br><br>
-          <img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_OpenToThieves2-WM.jpg" alt="Provide a Sense of Control" /><br><br><strong>Example 2</strong><br><br>
-          <img width="100%" src="images/AdoptionMarketing/AdoptionMarketing_ConnectedWorld1-WM.jpg" alt="Provide a Sense of Control" />
-          </span></p>
-          
-          <hr>
-          
-          
-          
-          
-          
-
-        </div>
-      </div>
-     
-    </article>
       
-         <!-- Messaging We Discourage ---------------------------------------------------->
-        
-         <article id="vt-messageDiscourage">
-         <h2 id="voice-and-tone">Messaging We Discourage</h2>
-         
-      <div class="group">
-         
+        <div class="group">
+        <div class="intro">
+          <h2 id="vt-messageEncourage">Messaging We Encourage</h2>
           
-          <div class="content"> 
-          <h3>Fear-driven marketing messages.</h3>
-         
-          <p><strong>Reason Why:</strong><br>
+          <!-- <p>These are our state colors. We use these colors to indicate something is in a particular state such as positive news, alerts, etc. Can be used as a text color or background color.</p> -->
+        </div>
+        <div class="example">
+<div class="content"><p>Our goal is to empower others to proactively secure their sensitive information and overall identities. Place any of these educational data sheets in your organization or as downloadables on your website to offer valuable information and tips on various types of identity theft, scams and other identity crimes. </p>
+          
+          <!-- Example 1 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>1) Empower people to take steps to protect themselves from identity crimes</h3>
+              <p>One of the most valuable ways we can help your customers/members/employees is to empower them to protect their identities. The goal is to inspire them to invest in themselves. Accomplish this through timely, easy-to-understand educational content that creates a natural relationship.</p>
+            </div>
+            <div class="visual lightbox1">
+              <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_MeAndMyIdentity1-min.jpg" title="Theme 7: Me and My Identity 1">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_MeAndMyIdentity1-min.jpg" alt="Theme 7: Me and My Identity 1" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox1 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+          <!-- Example 2 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>2) Motivate people to make good security decisions through sound security practices, monitoring tools and reaching out to resolution specialists.</h3>
+              <p>By integrating best practices and tools into everyday life, while also taking advantage of expert assistance, we can help people learn to make protective measures a regular part of their lives.</p>
+            </div>
+            <div class="visual lightbox2">
+              <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_LookingOut1-min.jpg" title="Theme 6: Looking Out For You 1">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_LookingOut1-min.jpg" alt="Theme 6: Looking Out For You 1" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox2 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+           <!-- Example 3 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>3) Encourage a deeper understanding and proactive approach to data protection.</h3>
+              <p> If we continue to be better understand identity crimes and proactively protect our information, we will be able to help prevent identity crimes from negatively affecting us.</p>
+            </div>
+            <div class="visual lightbox3">
+              <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_HowThievesSeeYou3-min.jpg" title="Theme 4: How ID Thieves See You 3">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_HowThievesSeeYou3-min.jpg" alt="Theme 4: How ID Thieves See You 3" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox3 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+           <!-- Example 4 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>4) Provide a sense of control.</h3>
+              <p> Protecting your information is easy when you take advantage of the powerful tools, resources and assistance at your fingertips.</p>
+            </div>
+            <div class="visual lightbox4">
+              <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_PalmofYourHand1-683x1024.jpg" title="Theme 1: Palm of Your Hand 1">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_PalmofYourHand1-683x1024.jpg" alt="Theme 1: Palm of Your Hand 1" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox4 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+           <!-- Example 5 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>5) Express the critical role people have in protecting themselves from identity crimes.</h3>
+              <p> We support taking a proactive role in one’s identity protection; they should be the number one advocate for their good name.</p>
+            </div>
+            <div class="visual lightbox5">
+              <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Story1-min.jpg" title="Theme 5: Protecting Your Story 1">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_Story1-min.jpg" alt="Theme 5: Protecting Your Story 1" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox5 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+            <!-- Example 6 -->
+          <div class="example-row">
+            <div class="desc">
+              <h3>6) Emphasize the pervasive nature of sensitive data and the many access points thieves can abuse.</h3>
+              <p> We live in a connected world, where information security is not always guaranteed. Identity thieves have a number of access points from which they can steal your sensitive information. It’s up to you to understand these risks and manage them appropriately.</p>
+            </div>
+            <div class="visual lightbox6">
+             <a href="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_OpenToThieves1-min.jpg" title="Theme 2: Open to Thieves 1">
+                <img width="100%" src="https://www.ezshield.com/wp-content/uploads/2017/10/AdoptionMarketing_OpenToThieves1-min.jpg" alt="Theme 2: Open to Thieves 1" />
+              </a>
+            </div>
+            <script>
+              $('.lightbox6 a').simpleLightbox();
+            </script>
+             
+            <div class="cb"></div>
+          </div>
+          
+          
+          
+          
+          
+     
+
+          <!-- Red -->
+          
+        </div>
+		  </div></div>
+        
+        
+        
+     <!-- Messaging We Discourage ---------------------------------------------------->
+
+      
+        <div class="group">
+        <div class="intro">
+          <h2 id="vt-messageDiscourage">Messaging We Discourage</h2>
+          
+        
+        </div>
+        <div class="example">
+<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget sagittis lorem. Mauris in consectetur neque, at consequat ex. Etiam imperdiet nulla non mi vulputate pulvinar. Vivamus imperdiet velit quis diam sagittis, quis aliquet ipsum vestibulum. Nam libero diam, mollis id vehicula quis, pellentesque ut enim. </p>
+          
+          
+          
+          
+            <!-- Example 1 -->
+          <div class="example-row">
+           <h3>Fear-driven marketing messages.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
 The identity protection industry has been inundated with anxiety-inducing marketing. Fear-driven messaging can sometimes lead to deceptive advertising, which ultimately can result in lawsuits against identity protection services. Furthermore, breach fatigue has emerged among consumers and small business owners despite the continued rise in data breaches.</p>
-          <p><span class="example"><strong>Example of fear-driven marketing</strong><br><br>
+          <p><span class="example"><strong>Example:</strong><br><br>
           “If you don’t have identity protection services, you should feel scared.”
           </span></p>
-
-          <p><strong>Alternative Approach:</strong><br>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
 Empower people to take steps to protect themselves from identity crimes.</p>
 
-          <p><span class="example"><strong>Alternative Example that EZShield approves</strong><br><br>
+          <p><span class="example"><strong>Example:</strong><br><br>
           “Take charge of your identity and question every request for your personal information.”
           </span></p>
-          
-          <hr>
-          
-          
-          
-          <h3>The phrase “Peace of Mind”</h3>
-         
-          <p><strong>Reason Why:</strong><br>
-“Peace of mind” is such a common phrase across industries that its meaning has become diluted. To differentiate ourselves from our competitors, EZShield encourages moving away from using this phrase. </p>
-          <p><span class="example"><strong>Example of "Peace of Mind"</strong><br><br>
-          “Enjoy peace of mind from your identity protection service.”
-          </span></p>
-
-          <p><strong>Alternative Approach:</strong><br>
-Encourage a proactive approach to data protection. We reflect this stance in our tagline Secure Your Identity™.</p>
-
-          <p><span class="example"><strong>Alternative Example that EZShield approves</strong><br><br>
-          “Gain the confidence that comes from having comprehensive identity protection on your side.” 
-          </span></p>
-          
-          <hr>
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
           
-          <h3>Promoting a false sense of calm.</h3>
-         
-          <p><strong>Reason Why:</strong><br>
+                  
+          <!-- Example 3 -->
+          <div class="example-row">
+           <h3>Promoting a false sense of calm.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
 It is misleading to suggest that people with identity protection can ignore potential identity threats. There is no way to fully prevent identity crimes from affecting personal information.</p>
-          <p><span class="example"><strong>Example of a false sense of calm</strong><br><br>
-          “You have nothing to worry about now that you have identity protection.”  
+          <p><span class="example"><strong>Example:</strong><br><br>
+          “You have nothing to worry about now that you have identity protection.”
           </span></p>
-
-          <p><strong>Alternative Approach:</strong><br>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
 Share relevant news and educational tips to provide helpful guidance for handling personal information.</p>
 
-          <p><span class="example"><strong>Alternative Example that EZShield approves</strong><br><br>
-          “Continue taking advantage of the data protection resources available to you.”
+          <p><span class="example"><strong>Example:</strong><br><br>
+         “Continue taking advantage of the data protection resources available to you.”
           </span></p>
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
-          <hr>
           
           
-          
-          
-          <h3>Credit monitoring is the most critical feature of identity protection.</h3>
-         
-          <p><strong>Reason Why:</strong><br>
+          <!-- Example 4 -->
+          <div class="example-row">
+           <h3>Credit monitoring is the most critical feature of identity protection.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
 Credit monitoring only alerts individuals after they have been victimized. </p>
-          <p><span class="example"><strong>Example of a false sense of calm</strong><br><br>
-          “If you’ve been affected by a data breach, make sure you get credit monitoring services.”  
+          <p><span class="example"><strong>Example:</strong><br><br>
+           “If you’ve been affected by a data breach, make sure you get credit monitoring services.”  
           </span></p>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
+Explain that credit monitoring is just one of many components that work to protect their identities. Your must address the full spectrum of identity crimes by utilizing a comprehensive suite of protective services.</p>
 
-          <p><strong>Alternative Approach:</strong><br>
-Explain that credit monitoring is just one of many components that work to protect their identities. Your must address the full spectrum of identity crimes by utilizing a comprehensive suite of protective services.   </p>
-
-          <p><span class="example"><strong>Alternative Example that EZShield approves</strong><br><br>
-          Make credit monitoring part of your comprehensive identity protection plan.
+          <p><span class="example"><strong>Example:</strong><br><br>
+         "Make credit monitoring part of your comprehensive identity protection plan."
           </span></p>
-                   
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
-
+          
         </div>
-      </div>
-     
-    </article>
-        
-        
-        
-        
-        
-<!-- Messaging We Do Not Support  ---------------------------------------------------->
-
-        
-        
-        
-        
-        
-        
-         <article id="vt-messageDont">
-         <h2 id="voice-and-tone">Messaging We Do Not Support</h2>
-         
-      <div class="group">
+		  </div></div>
+       
+       
+       <!-- Messaging We Do Not Support  ---------------------------------------------------->
+       
+       <div class="group">
+        <div class="intro">
+          <h2 id="vt-messageDont">Messaging We Do Not Support</h2>
           
           
-          <div class="content"> 
-          <h3>Making people feel powerless</h3>
-         
-          <p><strong>Reason Why:</strong><br>
+        </div>
+        <div class="example">
+<div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget sagittis lorem. Mauris in consectetur neque, at consequat ex. Etiam imperdiet nulla non mi vulputate pulvinar. Vivamus imperdiet velit quis diam sagittis, quis aliquet ipsum vestibulum. Nam libero diam, mollis id vehicula quis, pellentesque ut enim. </p>
+          
+          
+          
+          
+          
+          <!-- Example 1 -->
+          <div class="example-row">
+           <h3>Making people feel powerless.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
 We recognize the importance of making people feel empowered through positive messages that connect them to their services, which leads to long-term engagement. This is crucial because consumers who feel powerless are often the first to purchase identity protection services. However, they also tend to be the first to leave once the fear of identity theft is no longer top-of-mind. </p>
-          <p><span class="example"><strong>Example of making people feel powerless</strong><br><br>
-         Without identity protection, there is no way to protect your identity.   
+          <p><span class="example"><strong>Example:</strong><br><br>
+           “Without identity protection, there is no way to protect your identity.”  
           </span></p>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
+Motivate people to make a difference through better security practices, monitoring tools and resolution specialist.</p>
 
-          <p><strong>Alternative Approach:</strong><br>
-Motivate people to make a difference through better security practices, monitoring tools and resolution specialist. </p>
-
-          <p><span class="example"><strong>Alternative Example that EZShield approves</strong><br><br>
-         “Knowledge is your first line of defense against identity crimes.” 
+          <p><span class="example"><strong>Example:</strong><br><br>
+         “Knowledge is your first line of defense against identity crimes.”
           </span></p>
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
-          <hr>
-          
-          <h3>Confusing messaging about identity crimes and what identity protection can do.</h3>
-          
-          <p><strong>Reason Why:</strong><br>
-A lack of clarity could misrepresent identity crime risks and identity protection service capabilities, resulting in unsatisfied, distrustful customers that lodge formal complaints.   </p>
-          <p><span class="example"><strong>Example</strong> confusing messaging<br><br>
-          “Identity protection is the only way to fight identity theft.” (Referring to all crimes or threats as identity theft and then suggesting that identity protection is the answer).    
+           <!-- Example 2 -->
+          <div class="example-row">
+           <h3>Confusing messaging about identity crimes and what identity protection can do.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
+A lack of clarity could misrepresent identity crime risks and identity protection service capabilities, resulting in unsatisfied, distrustful customers that lodge formal complaints.</p>
+          <p><span class="example"><strong>Example:</strong><br><br>
+           “Identity protection is the only way to fight identity theft.” (Referring to all crimes or threats as identity theft and then suggesting that identity protection is the answer).  
           </span></p>
-
-          <p><strong>Alternative Approach:</strong><br>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
 Clearly define the differences between the various types of identity crimes so that people can better understand how they may be impacted. Simultaneously, describe precisely what identity protection services do to help protect against these identity crimes.</p>
 
-          <p><span class="example"><strong>Alternative Example</strong> that EZShield approves<br><br>
-          “Be aware of all forms of identity crimes, how to protect yourself and what identity protection services can do for you.”
+          <p><span class="example"><strong>Example:</strong><br><br>
+         “Be aware of all forms of identity crimes, how to protect yourself and what identity protection services can do for you.”
           </span></p>
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
-          <hr>
-          <h3>You don’t have to do anything to protect your information; we are doing everything for you. </h3>
-          
-			  <p><strong>Why We Can't Support This</strong><br>
+          <!-- Example 3 -->
+          <div class="example-row">
+           <h3>You don’t have to do anything to protect your information; we are doing everything for you.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
 It’s impossible for that any identity protection service to fully secure a customer’s identity without any involvement from the customer. </p>
-          <span class="example"><strong>Example</strong> confusing messaging<br><br>
-         Sit back and relax while we take care of all aspects of protecting your identity.
+          <p><span class="example"><strong>Example:</strong><br><br>
+           “Sit back and relax while we take care of all aspects of protecting your identity.”  
           </span></p>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
+Emphasize that our services hinge on customer activation and engagement through the educational information we provide.</p>
 
-          <p><strong>Alternative Approach</strong><br>Emphasize that our services hinge on customer activation and engagement through the educational information we provide.   </p>
-
-          <p><span class="example"><strong>Alternative Example</strong> that EZShield approves<br><br>
-         Together, you and your identity protection service are an effective team against identity crimes.
+          <p><span class="example"><strong>Example:</strong><br><br>
+         “Together, you and your identity protection service are an effective team against identity crimes.”
           </span></p>
-          <hr>
+            </div>
+            
+            <div class="cb"></div>
+          </div>
           
-          <h3>Identity protection protects you fully, preventing any form of identity crime.  </h3>
           
-          <p><strong>Why We Can't Support This</strong><br>
-Messages like this give the false impression that identity protection is a magic bullet. Nothing prevents identity crimes 100 percent.  </p>
-          <p><span class="example"><strong>Example</strong> confusing messaging<br><br>
-         Having identity protection means you are no longer exposed to identity crime threats.
+          <!-- Example 4 -->
+          <div class="example-row">
+           <h3>Identity protection protects you fully, preventing any form of identity crime.</h3>
+            <div class="desc">
+              
+              <p><strong>Why We Discourage This:</strong><br>
+Messages like this give the false impression that identity protection is a magic bullet. Nothing prevents identity crimes 100 percent.</p>
+          <p><span class="example"><strong>Example:</strong><br><br>
+           “Having identity protection means you are no longer exposed to identity crime threats.”  
           </span></p>
+            </div>
+            <div class="visual">
+             <p><strong>Consider an Alternative Approach:</strong><br>
+Make it clear that there is no cure-all for identity crimes.</p>
 
-          <p><strong>Alternative Approach</strong><br>Make it clear that there is no cure-all for identity crimes. </p>
-
-          <p><span class="example"><strong>Alternative Example</strong> that EZShield approves<br><br>
-          There is no single answer to identity crimes — it requires a combination of being proactive and having comprehensive identity protection services to back you up.
+          <p><span class="example"><strong>Example:</strong><br><br>
+         “There is no single answer to identity crimes — it requires a combination of being proactive and having comprehensive identity protection services to back you up.”
           </span></p>
-
+            </div>
+            
+            <div class="cb"></div>
+          </div>
+          
+          
+          
+          
         </div>
-      </div>
-     
+		  </div></div>
     </article>
-    <!-- END ---------------------------------------------------->
+     
+        
+        
+      
 
 
 
