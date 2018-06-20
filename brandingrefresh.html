@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <title>EZShield Brand Refresh Guide</title>
+  <meta name="robots" content="noindex">
+  <link href="code.css" rel="stylesheet" type="text/css" />
+  <link href="frame.css" rel="stylesheet" type="text/css" />
+  <link href="style.less" rel="stylesheet/less" type="text/css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-18930113-4“></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(‘js’, new Date());
+
+   gtag(‘config’, ‘UA-18930113-4’);
+  </script>
+
+  <script src="less.js" type="text/javascript"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/dfr8gzl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $('.btn').click(function() {
+        checkPasswordMatch();
+      });
+
+      function checkPasswordMatch() {
+        var password = $("#txtPassword").val();
+
+        if (password != "ezshield-refresh") {
+            $("#divCheckPasswordMatch").html("The password you entered is incorrect");
+        }
+        else {
+          localStorage.setItem('password','lock');
+          $('.overlay-password').hide();
+          $('nav, section').show();
+        }
+      }
+
+      if (localStorage && localStorage.getItem('password')) {
+        $('.overlay-password').hide();
+        $('nav, section').show();
+      }
+
+      var distance = $('nav').offset().top,
+      $window = $(window);
+
+      $window.scroll(function() {
+          if ( $window.scrollTop() >= distance - 25 ) {
+              $('nav').css({"position": "fixed", "margin-top": "0", "top": "25px"});
+          }
+          if ( $window.scrollTop() <= distance - 25 ) {
+              $('nav').css({"position": "absolute", "margin-top": "80px", "top": "initial"});
+          }
+      });
+    });
+  </script>
+</head>
+
+<body id="top">
+  <header>
+    <h2 style="color: #fff;">EZShield<sup>&reg;</sup> Brand Refresh Guide</h2>
+    <!--<div class="nav-main">
+      <ul>
+        <li><a href="branding.html">EZShield Branding</a></li>
+        <li><a href="design.html">EZShield Design</a></li>
+        <li><a href="partnerbranding.html">Partner Branding</a></li>
+        <li><a href="partnermarketing.html">Partner Marketing</a></li>
+        <li><a href="partnerresources.html">Partner Messaging</a></li>
+      </ul>
+    </div>-->
+    <div class="cb"></div>
+  </header>
+
+  <div class="overlay-password">
+    <div class="passwordContainer">
+      <p>This resource is available to help facilitate the EZShield logo refresh.<br><br></p>
+      <p>Please reach out to Michael Ellis at <a href="mailto:mellis@ezshield.com">mellis@ezshield.com</a> to view this section.</p>
+      <input class="passwordInput" type="password" id="txtPassword" />
+      <div class="passwordError" id="divCheckPasswordMatch"></div>
+      <div class="btn js-passwordBtn">Submit</div>
+    </div>
+  </div>
+  
+  <nav style="display: none;">
+    <ul>
+      <li><div class="js-toplevel"><span class="arrow"></span><span>Branding Guide</span></div>
+        <ul>
+          <li><a href="#logos">EZShield's Logo Variations</a></li>
+       		<li><a href="#branded-levels">Understand Branding Levels</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section style="display: none;">
+    <article>
+      <h1>Partner Branding - Introduction</h1>
+      
+        
+        <p>Please connect with the Marketing team prior to deploying logo changes for any externally-facing touchpoint. For now, this is an internal resource and can be accessed by using the password below. Please do not share any of these resources externally.</p>
+		  		  </article>
+    
+    
+    <!-- Partners ---------------------------------------------------->
+    <article id="logos">
+      <h2>EZShield Logo Variations</h2>
+      
+      <div class="group">
+      
+        <div class="example soloimage">
+          <!-- State Colors -->
+          
+          <div class="example-row">
+            <div class="desc">
+              <h3>Corporate Logo</h3>
+              <p>This is our official corporate logo. This new version has no tagline built into the logo itself, giving us more flexibility in how we can position ourselves. This logo is used on the corporate site, our social media accounts, employee-facing touchpoints, and official documents.</p><br>
+              <p>Source File &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_MainLogo.psd" download>Photoshop (.psd)</a>
+              <a href="images/downloads/logos/refresh/EZShield_MainLogo.ai" download>Illustrator (.ai)</a><br>
+
+              <p>Hi-Res Image &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_MainLogo.jpg" download>White Background (.jpg)</a>
+              <a href="images/downloads/logos/refresh/EZShield_MainLogo.png" download>Transparent Background (.png)</a>
+            </div>
+             <div class="visual">
+              <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_MainLogo_Display.png" alt="EZShield Main Corporate Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+
+          <div class="example-row">
+            <div class="desc">
+              <h3>Customer Facing</h3>
+              <p>This is the default logo that is presented on partner sites, for the end-customer audience. It uses the same existing tagline of "Identity Crime Protection" and is presented by itself.</p><br>
+              <p>Source File &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_Standard.psd" download>Photoshop (.psd)</a>
+              <a href="images/downloads/logos/refresh/EZShield_Standard.ai" download>Illustrator (.ai)</a><br>
+
+              <p>Hi-Res Image &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_Standard.jpg" download>White Background (.jpg)</a>
+              <a href="images/downloads/logos/refresh/EZShield_Standard.png" download>Transparent Background (.png)</a>
+            </div>
+             <div class="visual">
+              <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_Standard_Display.png" alt="EZShield Standard Customer-Facing Logo" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <div class="example-row">
+            <div class="desc">
+              <h3>Customer Facing with Partner</h3>
+              <p>Alternate to the default logo. This version includes partner branding associated with it.</p><br>
+              <p>Source File &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_StandardPartner.psd" download>Photoshop (.psd)</a>
+              <a href="images/downloads/logos/refresh/EZShield_StandardPartner.ai" download>Illustrator (.ai)</a><br>
+
+              <p>Hi-Res Image &mdash; </p>
+              <a href="images/downloads/logos/refresh/EZShield_StandardPartner.jpg" download>White Background (.jpg)</a>
+              <a href="images/downloads/logos/refresh/EZShield_StandardPartner.png" download>Transparent Background (.png)</a>
+            </div>
+             <div class="visual">
+              <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_StandardPartner_Display.png" alt="EZShield Standard Customer Facing Logo with Partner Branding" />
+            </div>
+            <div class="cb"></div>
+          </div>
+          
+          <div class="example-row">
+            <div class="desc">
+              <h3>Clear Space</h3>
+              <p>The minimum clear space around the logo should be 15px for optimum visibility.</p>
+            </div>
+             <div class="visual">
+              <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/Logo_ClearSpace.jpg" alt="Logo Safe Margins" />
+            </div>
+            <div class="cb"></div>
+          </div>
+        
+         
+        </div>
+   
+        
+       
+
+        </div>
+    
+      
+       <article id="branded-levels">
+      <h2>Understanding Branding Levels for Partner Programs</h2>
+      <div class="group">
+
+        <div class="intro">
+          <p>When you implment your program we have 4 levels of branding for you to choose from. Branding for each level is fully implmented in your program from our websites, dashboard and email communications.</p>
+          	
+        </div>
+         <div class="intro partnerlevelbranding">
+          <h3><strong>Level 1:</strong> EZShield as the only brand</h3>
+              <p>EZShield is presented as the only brand in your program through web and email.</p>
+          	  <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_Standard_Display.png" alt="EZShield Standard Customer-Facing Logo" />
+          	  <img class="partnerexampleimage" src="images/downloads/logos/refresh/ScreenSizes-PartnerBranding-Level1.png" alt="EZShield partner logo template" />
+              
+        </div>
+         <div class="intro partnerlevelbranding">
+          <h3><strong>Level 2:</strong> EZShield as the only brand, limited partner brand visibility</h3>
+              <p>EZShield is presented as the only brand in your program through web and email.</p>
+          	  <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_Standard_Display.png" alt="EZShield Standard Customer-Facing Logo" />
+              <img class="partnerexampleimage" src="images/downloads/logos/refresh/ScreenSizes-PartnerBranding-Level2.png" alt="EZShield partner logo template" />
+        </div>
+        
+        <div class="intro partnerlevelbranding">
+          <h3><strong>Level 3:</strong> EZShield's brand as the lead, partnering with you</h3>
+            <p>EZShield is presented as clearly partnering with your brand, appearing as the lead brand logo through web and email.</p>
+          	  <img width="400" style="margin-left: 50px;" src="images/downloads/logos/refresh/EZShield_StandardPartner_Display.png" alt="EZShield Standard Customer-Facing Logo" />
+              <img class="partnerexampleimage" src="images/downloads/logos/refresh/ScreenSizes-PartnerBranding-Level3.png" alt="EZShield partner logo template" />
+        </div>
+        
+        <div class="intro partnerlevelbranding">
+          <h3><strong>Level 4:</strong> Your branded program, Powered by EZShield</h3>
+            <p>Create your own program brand, seen clearly Powered by EZShield through web and email.</p>
+          	  <img height="70" src="images/Level4-Brand-Logo.png" alt="EZShield partner logo template" />
+              <img class="partnerexampleimage" src="images/downloads/logos/refresh/ScreenSizes-PartnerBranding-Level4.png" alt="EZShield partner logo template" />
+        </div>
+        
+        
+    </article>
+    <!-- END ---------------------------------------------------->
+
+
+
+  </section>
+<!-- PARDOT Website Tracking -------------------------------->
+  </section>
+<script type="text/javascript">
+piAId = '46932';
+piCId = '22693';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+	<!-- END -------------------------------->
+</body>
+</html>
